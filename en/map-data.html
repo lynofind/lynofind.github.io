@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Map data · LYNO Find</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header>
+  <a href="./">LYNO Find</a>
+  <nav><a href="./">About</a><a href="support.html">Help</a><a href="privacy.html">Privacy</a><a href="../map-data.html" lang="ko">한국어</a></nav>
+</header>
+
+<h1>Map data</h1>
+<p>To find photos by where they were taken (for example “Jeju beach” or “Osaka”), LYNO Find carries region boundaries inside the app and checks which region a photo's recorded location falls in, on the device only. It never asks a server to turn a location into a place name.</p>
+
+<h2>Korean region boundaries</h2>
+<p>© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors. Available under the <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL) 1.0</a>.</p>
+<p>The Korean province, city/county/district and city-district boundaries in the app were extracted from OpenStreetMap data of 12 November 2026 and simplified. This derived database is offered here under ODbL 1.0.</p>
+<div class="card">
+<p class="q"><a href="../data/kr_admin_osm20261112_t0002.json.gz" download>kr_admin_osm20261112_t0002.json.gz</a> (272 KB, gzip-compressed JSON)</p>
+<p class="a">SHA-256 (compressed file): bfdf891368f52c4d37832755791a348fa6dbc8ecf1710973a1820cea6b648202<br>
+SHA-256 (uncompressed JSON): 8ee23e1a5f037bf22352711b9f318982a0763472a47df45451a02889a4c3db5a<br>
+Format: each region has level (4 province, 6 city/county/district, 7 city district), name, sido, sigungu and polygons. Polygon rings are [x0, y0, dx, dy, …] in units of 1/10,000 degree (longitude, latitude). The first ring is the outline, the rest are holes.</p>
+</div>
+
+<h2>Other countries</h2>
+<p>Countries, states/provinces and cities come from <a href="https://www.naturalearthdata.com/">Natural Earth</a> (public domain). Made with Natural Earth.</p>
+
+<footer>Operator: Hyoungdon Kim · <a href="mailto:lynofind@gmail.com">lynofind@gmail.com</a> · <a href="privacy.html">Privacy Policy</a> · <a href="map-data.html">Map data</a></footer>
+</main>
+</body>
+</html>
