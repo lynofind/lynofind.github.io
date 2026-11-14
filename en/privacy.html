@@ -14,7 +14,7 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Effective: November 13, 2026 · Operator: Hyoungdon Kim · Contact: <a href="mailto:lynofind@gmail.com">lynofind@gmail.com</a></p>
+<p class="meta">Effective: November 14, 2026 · Operator: Hyoungdon Kim · Contact: <a href="mailto:lynofind@gmail.com">lynofind@gmail.com</a></p>
 
 <p>LYNO Find is an app that finds the photos and documents on your phone. There is no sign-up, the operator runs no server, and the operator receives no personal information from you. Reading and searching your photos and documents all happens on your device.</p>
 
@@ -31,7 +31,7 @@
 <p>The search index is encrypted and stored only on your device. The AI models that understand photo content are built into the app and run on your device without sending photos anywhere. While your phone is charging, the app can keep indexing new photos little by little even when it is closed; this also happens only on your device.</p>
 
 <h2>2. Information sent outside the device</h2>
-<p>The operator does not receive your photos, documents, text found in photos, search queries or voice. The app uses no usage statistics or analytics tools. The app connects to the internet only for the ads described below and for checking for a new version.</p>
+<p>The operator does not receive your photos, documents, text found in photos, search queries or voice. The app uses no usage statistics or analytics tools. The app connects to the internet only for the ads described below, for checking for a new version, and for Google Drive if you connect it yourself (section 6).</p>
 <p><strong>New version check</strong>: when you open the app, it checks once whether a new version is available. On Android, the Google Play app performs the check. On iPhone, the app sends only its identifier (com.lynofind.app) and your region to the Apple App Store and receives the latest version number. No photos, documents, text found in photos, queries, voice or information that identifies you is sent. As with any internet connection, Apple and Google may receive your device's IP address.</p>
 
 <h2>3. Ads</h2>
@@ -42,7 +42,7 @@
 <li>Ad interactions such as impressions and clicks</li>
 <li>Error and diagnostic information about the ad feature</li>
 </ul>
-<p>LYNO Find does not use personalized ads, and the app does not ask for permission to track you. Ad requests never include your photos, documents, text found in photos, queries or voice. Where consent is required, Google's consent screen appears before the first ad, and you can change your choice at any time under "Ad privacy settings" in the app's settings. Search keeps working even if ads fail to load.</p>
+<p>LYNO Find does not use personalized ads, and the app does not ask for permission to track you. Ad requests never include your photos, documents, text found in photos, queries or voice. Where consent is required, Google's consent screen appears before the first ad, and you can change your choice at any time under "Ad privacy settings" in the app's settings. Search keeps working even if ads fail to load. LYNO Find Pro (coming soon) shows no ads.</p>
 <p>Google's processing follows the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
 
 <h2>4. When you share something yourself</h2>
@@ -57,15 +57,50 @@
 <tr><td>Face ID or Touch ID, fingerprint or face unlock</td><td>App lock</td><td>You can use a PIN lock or no lock</td></tr>
 </tbody>
 </table>
-<p>The app reads only the documents and folders you pick yourself.</p>
+<p>The app reads only the documents and folders you pick yourself. If you connect Google Drive, the app reads your Drive files with read-only access as described in section 6.</p>
 
-<h2>6. Retention and deletion</h2>
-<p>The index and settings the app creates stay only on your device. You can delete them with "Delete search index" or "Delete all local data" in the app's settings, and they are also removed when you delete the app. Search queries and recognized speech are not stored. The app never changes or deletes your original photos and documents.</p>
+<h2>6. Google Drive data (Pro, coming soon)</h2>
+<p>This feature is planned for LYNO Find Pro. If you choose to connect your Google account, you can search the files in your Google Drive together with the photos and documents on your phone. You can disconnect at any time, and the rest of the app works without connecting.</p>
+<p><strong>Data we access</strong> (read-only scope <code>drive.readonly</code>)</p>
+<table>
+<thead><tr><th>Data</th><th>Why it is used</th></tr></thead>
+<tbody>
+<tr><td>The list of files in your Drive</td><td>Finding the files to search</td></tr>
+<tr><td>File names and metadata such as type, size, modified date and folder</td><td>Showing search results and re-indexing only files that changed</td></tr>
+<tr><td>The content of files downloaded for search or that you select</td><td>Searching by the text and content inside files, downloading a file you choose to your phone, and passing it to the share sheet</td></tr>
+</tbody>
+</table>
+<p>LYNO Find never creates, edits or deletes files in your Google Drive, and never changes their sharing settings. It requests read-only access only.</p>
+<p><strong>Where data is processed and stored</strong></p>
+<ul>
+<li>All processing happens only on your phone. Google Drive data goes directly from Google's servers to your phone and never passes through any server of ours. The operator runs no server.</li>
+<li>The only thing kept on your phone is a search index built from file metadata and content. It is encrypted and stored only on your device.</li>
+<li>Files downloaded for search or sharing are kept briefly in temporary storage on your phone and deleted when the task finishes. The originals stay in your Google Drive.</li>
+<li>Your Google sign-in token is kept only in your phone's secure storage. The operator never receives or sees your Google password.</li>
+</ul>
+<p><strong>Sharing</strong>: when you pick a file in the search results and tap "Share", the file is downloaded to your phone and passed to the app you choose, and that app's policy applies from then on. The app never sends your Google Drive data to any other person or company on its own.</p>
+<p><strong>What we never do</strong></p>
+<ul>
+<li>No human reads your data. No one, including the operator, can see your Google Drive data; with no server, there is no way to.</li>
+<li>No advertising. Google Drive is offered only in Pro, which has no ads, and Google Drive data is never used for ad selection, personalized ads or retargeting.</li>
+<li>No transfer to third parties. We do not sell it or give it to data brokers, advertising platforms or information resellers, and we do not use it for lending or credit decisions.</li>
+<li>No AI model training. The AI model used for search is a finished model built into the app. Google Drive data is never used to train or improve this or any other model.</li>
+</ul>
+<p><strong>Disconnecting and deletion</strong></p>
+<ul>
+<li>When you tap "Disconnect Google Drive" in the app's settings, the Google Drive index, any temporary downloaded files and the sign-in token on your phone are deleted, and Google access is revoked.</li>
+<li>Deleting the app also deletes this data.</li>
+<li>You can also remove LYNO Find's access at any time in your <a href="https://myaccount.google.com/permissions">Google Account third-party access settings</a>. The app then deletes the Google Drive index on your phone the next time it opens.</li>
+</ul>
+<p><strong>Compliance with the Google API Services User Data Policy</strong>: LYNO Find's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-<h2>7. Children</h2>
+<h2>7. Retention and deletion</h2>
+<p>The index and settings the app creates stay only on your device. You can delete them with "Delete search index" or "Delete all local data" in the app's settings, and they are also removed when you delete the app. Search queries and recognized speech are not stored. The app never changes or deletes your original photos and documents. Deletion of Google Drive data follows section 6.</p>
+
+<h2>8. Children</h2>
 <p>LYNO Find is not directed to children under 14 and does not knowingly collect personal information from children.</p>
 
-<h2>8. Contact and changes</h2>
+<h2>9. Contact and changes</h2>
 <p>For privacy questions, email <a href="mailto:lynofind@gmail.com">lynofind@gmail.com</a>. If this policy changes, we will post the update on this page with its effective date. The <a href="../privacy.html" lang="ko">Korean version</a> of this policy is the original.</p>
 
 <footer>© 2026 LYNO Find · <a href="map-data.html">Map data</a></footer>
